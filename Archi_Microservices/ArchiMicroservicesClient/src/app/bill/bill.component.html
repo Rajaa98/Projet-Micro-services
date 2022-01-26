@@ -1,0 +1,51 @@
+<nav class="navbar navbar-light bg-light">
+  <form #f="ngForm" class="form-inline" (ngSubmit)="onSubmit()">
+    <input type="text" name="billId" [(ngModel)]="model.billId" class="form-control mr-sm-2" placeholder="Search Bill Id" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+    <button class="btn btn-outline-success my-4 my-sm-0" type="submit">CreatBill</button>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">updateBill</button>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">DelletBill</button>
+  </form>
+</nav>
+
+<div class="container">
+  <div class="row justify-content-center" style="margin-top: 20px; display: block">
+    <div class="col-xs-12 heading">BILL</div>
+  </div>
+
+  <div class="col-xs-6">
+    <h5>Bill #{{bill.id}}</h5>
+  </div>
+
+    <p style="text-align: right">{{bill.billingDate | date: 'fullDate'}}</p>
+  <hr>
+
+    <div class="col-xs-6">
+      <h5>Customer #{{bill.customer.id}}</h5>
+      <p>{{bill.customer.name}}</p>
+      <p>{{bill.customer.email}}</p>
+    </div>
+
+  <h5>Items</h5>
+  <div class="container">
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">Description</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Price</th>
+        <th scope="col">Total</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let productItem of bill.productItems">
+        <th scope="row">{{productItem.productName}}</th>
+        <td>{{productItem.quantity}}</td>
+        <td>{{productItem.price}}</td>
+        <td>{{productItem.quantity * productItem.price}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

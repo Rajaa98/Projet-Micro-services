@@ -9,7 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import javax.ws.rs.QueryParam;
 
 @FeignClient(name = "PRODUCT-SERVICE")
-public interface ProductItemRestClient {
+public interface
+ProductItemRestClient {
     @GetMapping(path = "/products")
     PagedModel<Product> pageProducts();
     @GetMapping(path = "/products/{id}")
