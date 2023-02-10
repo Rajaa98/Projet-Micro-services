@@ -1,0 +1,13 @@
+
+k
+;Archi_Microservices/ArchiMicroservicesClient/src/index.html,3\d\3d9ebc00341daf5c9996b8e869fef47f8f9832e1
+h
+8Archi_Microservices/ArchiMicroservicesClient/src/main.ts,a\e\ae1d7b23327d3c04b4963d3ef46468a177de4ad9
+m
+=Archi_Microservices/ArchiMicroservicesClient/src/polyfills.ts,d\9\d98a4e513fcf1c591567dbfafec186245afeac77
+k
+;Archi_Microservices/ArchiMicroservicesClient/src/styles.css,e\b\eb74cbae1fa01ca86e13ae3adeb5e8a55426a90a
+h
+8Archi_Microservices/ArchiMicroservicesClient/src/test.ts,7\3\738738767fd77321cf448fa3fadc32d96113367f
+l
+<Archi_Microservices/ArchiMicroservicesClient/.browserslistrc,6\6\66bfff520b34f7d78bcb013e0dff6418ca063032
